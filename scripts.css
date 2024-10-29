@@ -1,0 +1,41 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+    position: relative;
+    color: red;
+    animation: colorShift 4s ease-in-out infinite;
+}
+
+@keyframes colorShift {
+    0%, 100% { color: red; }
+    50% { color: white; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
