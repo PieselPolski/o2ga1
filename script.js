@@ -2,8 +2,9 @@
 const images = document.querySelectorAll('.floating-image');
 const sharcoPartyBtn = document.getElementById('sharcoPartyBtn');
 const robloxAccountBtn = document.getElementById('robloxAccountBtn');
-const confettiContainer = document.getElementById('confetti');
+const confettiContainer = document.getElementById('confetti-container');
 
+// Floating Image Movement
 images.forEach((img) => {
     let posX = Math.random() * window.innerWidth;
     let posY = Math.random() * window.innerHeight;
@@ -18,14 +19,13 @@ images.forEach((img) => {
         if (posY <= 0 || posY >= window.innerHeight - img.height) speedY *= -1;
 
         img.style.transform = `translate(${posX}px, ${posY}px)`;
-
         requestAnimationFrame(animate);
     }
 
     animate();
 });
 
-// Party Mode Activation
+// Activate Party Mode
 sharcoPartyBtn.addEventListener('click', () => {
     document.body.classList.add('party-mode');
     generateConfetti();
@@ -49,7 +49,7 @@ function generateConfetti() {
     }
 }
 
-// Helper function to get a random color
+// Helper function to get a random color for confetti
 function getRandomColor() {
     const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
     return colors[Math.floor(Math.random() * colors.length)];
