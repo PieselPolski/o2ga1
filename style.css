@@ -1,3 +1,4 @@
+/* General styling */
 body {
     margin: 0;
     background-color: #000;
@@ -7,6 +8,7 @@ body {
     overflow: hidden;
 }
 
+/* Container and heading */
 .container {
     padding-top: 20px;
 }
@@ -16,6 +18,7 @@ h1 {
     color: #ffcccc;
 }
 
+/* Button styling */
 .button-container {
     margin-top: 20px;
 }
@@ -37,6 +40,7 @@ h1 {
     transform: scale(1.1);
 }
 
+/* Floating image styling */
 .floating-images {
     position: absolute;
     top: 0;
@@ -52,6 +56,11 @@ h1 {
     height: auto;
 }
 
+/* RGB background for party mode */
+.party-mode {
+    animation: rgbDanceFloor 3s infinite;
+}
+
 @keyframes rgbDanceFloor {
     0% { background-color: red; }
     33% { background-color: green; }
@@ -59,11 +68,8 @@ h1 {
     100% { background-color: red; }
 }
 
-.party-mode {
-    animation: rgbDanceFloor 3s infinite;
-}
-
-.confetti-container {
+/* Confetti styles */
+#confetti-container {
     pointer-events: none;
     position: fixed;
     top: 0;
