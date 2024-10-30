@@ -33,7 +33,7 @@ sharcoPartyBtn.addEventListener('click', () => {
 
 // Redirect to Roblox Account
 robloxAccountBtn.addEventListener('click', () => {
-    window.location.href = 'https://www.roblox.com/users/540995318/profile'; // Replace with your Roblox profile link
+    window.location.href = 'https://www.roblox.com/users/YourRobloxID/profile'; // Replace with your Roblox profile link
 });
 
 // Generate Confetti
