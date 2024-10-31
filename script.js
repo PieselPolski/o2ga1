@@ -1,6 +1,6 @@
 // script.js
 
-const images = document.querySelectorAll('.floating-image');
+const images = document.querySelectorAll('floating-image');
 
 images.forEach((img) => {
     let posX = Math.random() * window.innerWidth;
