@@ -11,8 +11,8 @@ images.forEach((img) => {
         posY += speedY;
 
         // Bounce off screen edges
-        if (posX <= 0 || posX >= window.innerWidth - img.offsetWidth) speedX *= -1;
-        if (posY <= 0 || posY >= window.innerHeight - img.offsetHeight) speedY *= -1;
+        if (posX <= 0 || posX >= window.innerWidth - img.offsetWidth) speedX *= -5;
+        if (posY <= 0 || posY >= window.innerHeight - img.offsetHeight) speedY *= -5;
 
         img.style.transform = `translate(${posX}px, ${posY}px)`;
 
