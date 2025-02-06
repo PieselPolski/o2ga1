@@ -1,22 +1,20 @@
-// script.js
-
-const images = document.querySelectorAll('floating-image');
+const images = document.querySelectorAll('.floating-image');
 
 images.forEach((img) => {
-    let posX = Math.random() * window.innerWidth;
-    let posY = Math.random() * window.innerHeight;
-    let speedX = (Math.random() - 0.9) * 4;
-    let speedY = (Math.random() - 0.9) * 4;
+    let posX = Math.random() * (window.innerWidth - img.offsetWidth);
+    let posY = Math.random() * (window.innerHeight - img.offsetHeight);
+    let speedX = (Math.random() - 0.5) * 4; // Adjusted speed variation
+    let speedY = (Math.random() - 0.5) * 4;
 
     function animate() {
         posX += speedX;
         posY += speedY;
 
-        // Odbijanie od granic ekranu
-        if (posX <= 0 || posX >= window.innerWidth - img.width) speedX *= -1;
-        if (posY <= 0 || posY >= window.innerHeight - img.height) speedY *= -1;
+        // Bounce off screen edges
+        if (posX <= 0 || posX >= window.innerWidth - img.offsetWidth) speedX *= -1;
+        if (posY <= 0 || posY >= window.innerHeight - img.offsetHeight) speedY *= -1;
 
-        img.style.transform = translate(${posX}px, ${posY}px);
+        img.style.transform = `translate(${posX}px, ${posY}px)`;
 
         requestAnimationFrame(animate);
     }
