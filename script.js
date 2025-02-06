@@ -3,8 +3,8 @@ const images = document.querySelectorAll('.floating-image');
 images.forEach((img) => {
     let posX = Math.random() * (window.innerWidth - img.offsetWidth);
     let posY = Math.random() * (window.innerHeight - img.offsetHeight);
-    let speedX = (Math.random() - 0.5) * 4; // Adjusted speed variation
-    let speedY = (Math.random() - 0.5) * 4;
+    let speedX = (Math.random() - 2) * 4; // Adjusted speed variation
+    let speedY = (Math.random() - 2) * 4;
 
     function animate() {
         posX += speedX;
