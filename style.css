@@ -62,7 +62,8 @@ animation: colorShift1 2.5s ease-in-out infinite;
     from { opacity: 0; }
     to { opacity: 1; }
 }
-}
+
 @keyframes colorShift1 {
-    0%, 100% {color: orange;}
-    50% {color: white; }
+    0%, 100% { color: orange; }
+    50% { color: white; }
+}
