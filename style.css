@@ -25,7 +25,7 @@ body, html {
 
 h1 {
     position: relative;
-    color: red;
+    color: yellow;
     animation: colorShift 4s ease-in-out infinite;
 }
 
