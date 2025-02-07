@@ -46,7 +46,7 @@ h1 {
 }
 
 @keyframes colorShift {
-    0%, 100% { color: red; }
+    0%, 100% { color: yellow; }
     50% { color: white; }
 }
 
