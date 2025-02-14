@@ -25,7 +25,7 @@ body, html {
 
 h1 {
     position: relative;
-    color: yellow;
+    color: red;
     animation: colorShift 4s ease-in-out infinite;
 }
 h2 {
@@ -54,7 +54,7 @@ animation: colorShift1 4s ease-in-out infinite;
 }
 
 @keyframes colorShift {
-    0%, 100% { color: yellow; }
+    0%, 100% { color: red; }
     50% { color: white; }
 }
 
